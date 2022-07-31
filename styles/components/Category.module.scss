@@ -1,0 +1,7 @@
+.container {
+    @apply w-full h-40 p-3 rounded-md hover:bg-gray-200;
+    @apply flex justify-center items-center flex-col gap-4;
+    svg {
+        @apply text-slate-500;
+    }
+}

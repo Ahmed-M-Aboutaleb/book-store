@@ -1,0 +1,18 @@
+.container {
+    @apply grid grid-cols-3 h-14 p-1;
+    @apply border-b-2;
+    .col {
+        @apply w-full h-full;
+        @apply flex items-center justify-center;
+    }
+    .logo {
+        svg {
+            @apply text-[#50c8b4] hover:text-primary cursor-pointer;
+        }
+    }
+    .account {
+        svg {
+            @apply text-gray-500 hover:text-gray-900 cursor-pointer;
+        }
+    }
+}

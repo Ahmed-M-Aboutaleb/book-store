@@ -1,0 +1,13 @@
+.card {
+    @apply p-4 rounded-xl text-white h-64 w-full bg-slate-500;
+    @apply flex flex-row shadow-xl;
+}
+.blue {
+    @apply bg-gradient-to-br from-blue-300 to-cyan-300;
+}
+.green {
+    @apply bg-gradient-to-br from-primary to-[#50c8b4];
+}
+.red {
+    @apply bg-gradient-to-br from-rose-300 to-pink-400;
+}
