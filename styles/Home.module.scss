@@ -9,7 +9,7 @@
 
 .features {
     @apply w-full mt-10 mb-4 h-64 bg-gray-200/70;
-    @apply grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center items-center;
+    @apply grid grid-cols-1 md:grid-cols-4 gap-4 justify-items-center items-center;
     .col {
         @apply flex flex-row gap-4 justify-center items-center;
         h2 {
