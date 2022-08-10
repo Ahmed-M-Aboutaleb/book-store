@@ -1,27 +1,32 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/pro-thin-svg-icons';
 import {
+    faBasketShoppingSimple,
+    faMagnifyingGlass,
     faCircleUser,
-    faBookOpenReader,
-} from '@fortawesome/pro-duotone-svg-icons';
+} from '@fortawesome/pro-light-svg-icons';
+import { faBookOpenReader, faBooks } from '@fortawesome/pro-duotone-svg-icons';
 import styles from '../styles/components/Navbar.module.scss';
 
 function Navbar() {
     return (
         <div className={styles.container}>
             <div className={`${styles.col} ${styles.search}`}>
-                <FontAwesomeIcon size='1x' icon={faMagnifyingGlass} />
-                <input
-                    className='appearance-none bg-transparent border-none text-gray-700 ml-2 py-1 px-2 leading-tight focus:outline-none w-3/5'
-                    type={'text'}
-                    placeholder='Find the book'
-                />
+                <a href='#categories' className={styles.categories}>
+                    <FontAwesomeIcon size='1x' icon={faBooks} />
+                    <h2 className='uppercase text-sm font-bold m-2 select-none'>
+                        Browse Categories
+                    </h2>
+                </a>
             </div>
             <div className={`${styles.col} ${styles.logo}`}>
                 <FontAwesomeIcon size='2x' icon={faBookOpenReader} />
             </div>
             <div className={`${styles.col} ${styles.account}`}>
-                <FontAwesomeIcon size='2x' icon={faCircleUser} />
+                <div className='flex gap-5'>
+                    <FontAwesomeIcon size='lg' icon={faBasketShoppingSimple} />
+                    <FontAwesomeIcon size='lg' icon={faMagnifyingGlass} />
+                    <FontAwesomeIcon size='lg' icon={faCircleUser} />
+                </div>
             </div>
         </div>
     );

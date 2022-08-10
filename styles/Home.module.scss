@@ -1,3 +1,31 @@
-.container {
-    @apply p-6;
+.title {
+    @apply text-2xl font-semibold leading-normal mt-6 mb-4;
+}
+.header,
+.categories,
+.statistics {
+    @apply p-3;
+}
+
+.features {
+    @apply w-full mt-10 mb-4 h-64 bg-gray-200/70;
+    @apply grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center items-center;
+    .col {
+        @apply flex flex-row gap-4 justify-center items-center;
+        h2 {
+            @apply font-semibold;
+        }
+        p {
+            @apply text-xs text-gray-600;
+        }
+        svg {
+            @apply text-secondary;
+        }
+    }
+}
+
+.statistics {
+    .container {
+        @apply grid grid-cols-1 md:grid-cols-3 h-80 justify-items-center items-center;
+    }
 }

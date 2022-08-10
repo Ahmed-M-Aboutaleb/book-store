@@ -1,13 +1,16 @@
 .container {
     @apply grid grid-cols-3 h-14 p-1;
     @apply border-b-2;
+    .categories {
+        @apply flex justify-center items-center cursor-pointer text-slate-600 hover:text-gray-900;
+    }
     .col {
         @apply w-full h-full;
         @apply flex items-center justify-center;
     }
     .logo {
         svg {
-            @apply text-[#50c8b4] hover:text-primary cursor-pointer;
+            @apply text-secondary hover:text-primary cursor-pointer;
         }
     }
     .account {
