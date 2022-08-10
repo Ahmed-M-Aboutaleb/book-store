@@ -42,28 +42,28 @@ const Home: NextPage = () => {
             <div className={styles.features}>
                 <div className={styles.col}>
                     <FontAwesomeIcon size='3x' icon={faShield} />
-                    <div>
+                    <div className={styles.container}>
                         <h2>Secure Payments</h2>
                         <p>100% Secure & Safe</p>
                     </div>
                 </div>
                 <div className={styles.col}>
                     <FontAwesomeIcon size='3x' icon={faArrowRotateLeft} />
-                    <div>
+                    <div className={styles.container}>
                         <h2>6 Days Return</h2>
                         <p>Best books with good prices</p>
                     </div>
                 </div>
                 <div className={styles.col}>
                     <FontAwesomeIcon size='3x' icon={faWallet} />
-                    <div>
+                    <div className={styles.container}>
                         <h2>Good Prices</h2>
                         <p>Best Books With Good Prices</p>
                     </div>
                 </div>
                 <div className={styles.col}>
                     <FontAwesomeIcon size='3x' icon={faHeadset} />
-                    <div>
+                    <div className={styles.container}>
                         <h2>24/7 Support</h2>
                         <p>Dedicated Support</p>
                     </div>

@@ -13,7 +13,7 @@ function Navbar() {
             <div className={`${styles.col} ${styles.search}`}>
                 <a href='#categories' className={styles.categories}>
                     <FontAwesomeIcon size='1x' icon={faBooks} />
-                    <h2 className='uppercase text-xs md:text-sm font-bold m-2 select-none'>
+                    <h2 className='uppercase text-[9px] md:text-sm font-bold m-2 select-none'>
                         Browse Categories
                     </h2>
                 </a>
