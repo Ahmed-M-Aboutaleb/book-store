@@ -1,0 +1,15 @@
+.col {
+    @apply flex flex-row gap-4 justify-center items-center;
+    .container {
+        @apply w-32;
+    }
+    h2 {
+        @apply font-semibold;
+    }
+    p {
+        @apply text-xs text-gray-600;
+    }
+    svg {
+        @apply text-secondary;
+    }
+}

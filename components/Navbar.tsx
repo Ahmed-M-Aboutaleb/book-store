@@ -22,7 +22,7 @@ function Navbar() {
                 <FontAwesomeIcon size='2x' icon={faBookOpenReader} />
             </div>
             <div className={`${styles.col} ${styles.account}`}>
-                <div className='flex gap-5'>
+                <div className='flex gap-2 md:gap-5'>
                     <FontAwesomeIcon size='lg' icon={faBasketShoppingSimple} />
                     <FontAwesomeIcon size='lg' icon={faMagnifyingGlass} />
                     <FontAwesomeIcon size='lg' icon={faCircleUser} />

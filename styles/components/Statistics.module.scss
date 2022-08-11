@@ -1,0 +1,6 @@
+.container {
+    @apply grid grid-cols-1 md:grid-cols-3 h-80 justify-items-center items-center;
+}
+.number {
+    @apply text-4xl m-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#50c8b4];
+}

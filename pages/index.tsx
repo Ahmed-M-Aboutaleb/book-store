@@ -4,18 +4,16 @@ import {
     faWandSparkles,
     faBook,
     faGun,
-    faWallet,
-    faHeadset,
     faJackOLantern,
     faLandmarkDome,
     faUserSecret,
-    faArrowRotateLeft,
-    faShield,
 } from '@fortawesome/pro-thin-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { NextPage } from 'next';
 import Card from '../components/Card';
 import Category from '../components/Category';
+import Features from '../components/Features';
+import Footer from '../components/Footer';
+import Statistics from '../components/Statistics';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => {
@@ -40,34 +38,7 @@ const Home: NextPage = () => {
                 </div>
             </div>
             <div className={styles.features}>
-                <div className={styles.col}>
-                    <FontAwesomeIcon size='3x' icon={faShield} />
-                    <div className={styles.container}>
-                        <h2>Secure Payments</h2>
-                        <p>100% Secure & Safe</p>
-                    </div>
-                </div>
-                <div className={styles.col}>
-                    <FontAwesomeIcon size='3x' icon={faArrowRotateLeft} />
-                    <div className={styles.container}>
-                        <h2>6 Days Return</h2>
-                        <p>Best books with good prices</p>
-                    </div>
-                </div>
-                <div className={styles.col}>
-                    <FontAwesomeIcon size='3x' icon={faWallet} />
-                    <div className={styles.container}>
-                        <h2>Good Prices</h2>
-                        <p>Best Books With Good Prices</p>
-                    </div>
-                </div>
-                <div className={styles.col}>
-                    <FontAwesomeIcon size='3x' icon={faHeadset} />
-                    <div className={styles.container}>
-                        <h2>24/7 Support</h2>
-                        <p>Dedicated Support</p>
-                    </div>
-                </div>
+                <Features />
             </div>
             <div className={styles.categories} id='categories'>
                 <h1 className={styles.title}>Categories</h1>
@@ -83,30 +54,9 @@ const Home: NextPage = () => {
                 </div>
             </div>
             <div className={styles.statistics}>
-                <h1 className='text-2xl font-semibold leading-normal mt-6'>
-                    Statistics
-                </h1>
-                <div className={styles.container}>
-                    <div className='text-center '>
-                        <h2 className='text-4xl m-2 font-simibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#50c8b4]'>
-                            5867
-                        </h2>
-                        <p>Books</p>
-                    </div>
-                    <div className='text-center '>
-                        <h2 className='text-4xl m-2 font-simibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#50c8b4]'>
-                            869
-                        </h2>
-                        <p>Authors</p>
-                    </div>
-                    <div className='text-center '>
-                        <h2 className='text-4xl m-2 font-simibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#50c8b4]'>
-                            +10K
-                        </h2>
-                        <p>Users</p>
-                    </div>
-                </div>
+                <Statistics />
             </div>
+            <Footer />
         </>
     );
 };

@@ -2,6 +2,23 @@
     @apply p-4 rounded-xl text-white h-64 w-full bg-slate-500;
     @apply flex flex-row shadow-xl;
 }
+
+.button {
+    @apply absolute bottom-0 py-2 px-3 text-white text-sm font-semibold rounded-md shadow-lg focus:outline-none;
+}
+
+.blueButton {
+    @apply bg-cyan-500 shadow-cyan-500/50 hover:bg-cyan-600 transition-all duration-200;
+}
+
+.greenButton {
+    @apply bg-[#2a9c89] shadow-green-400/50 hover:bg-[#227e6e] transition-all duration-200;
+}
+
+.redButton {
+    @apply bg-pink-500 shadow-red-500/50 hover:bg-pink-600 transition-all duration-200;
+}
+
 .blue {
     @apply bg-gradient-to-br from-blue-300 to-cyan-300;
 }

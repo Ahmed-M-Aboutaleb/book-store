@@ -15,7 +15,7 @@ function Card({ title, img, rating, color }: CardProps) {
             <div className={`${styles.card} ${styles[color]}`}>
                 <div className='w-1/2 relative max-h-full'>
                     <Image
-                        src={`/books/${img}.png`}
+                        src={`/books/${img}.jpeg`}
                         layout='fill'
                         objectFit='contain'
                         className=''
@@ -28,18 +28,11 @@ function Card({ title, img, rating, color }: CardProps) {
                     </h3>
                     <Rating rating={rating} />
                     <button
-                        className={`absolute bottom-0 py-2 px-3 text-white text-sm font-semibold rounded-md shadow-lg focus:outline-none ${
-                            color == 'blue' &&
-                            'bg-cyan-500 shadow-cyan-500/50 hover:bg-cyan-600 transition-all duration-200'
+                        className={`${styles.button} ${
+                            color == 'blue' && styles.blueButton
                         }
-                        ${
-                            color == 'green' &&
-                            'bg-[#2a9c89] shadow-green-400/50 hover:bg-[#227e6e] transition-all duration-200'
-                        }
-                        ${
-                            color == 'red' &&
-                            'bg-pink-500 shadow-red-500/50 hover:bg-pink-600 transition-all duration-200'
-                        }`}
+                        ${color == 'green' && styles.greenButton}
+                        ${color == 'red' && styles.redButton}`}
                     >
                         Read 👀
                     </button>
